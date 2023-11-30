@@ -22,7 +22,7 @@ class Menu extends BaseController
             'title' => 'Menu',
             'menu' => 'masterdata',
             'submenu' => 'menu',
-            'page' => 'user/admin/v_menu',
+            'page' => 'user/v_menu',
             'produk' => $this->ModelMenu->AllData(),
             'kategori' => $this->ModelKategori->AllData(),
         ];

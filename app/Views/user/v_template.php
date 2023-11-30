@@ -127,42 +127,36 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
-                                <?php if (session()->get('level') == 'admin') { ?>
-                                    <li class="nav-item">
-                                        <a href="<?= base_url('User') ?>" class="nav-link <?= $submenu == 'user' ? 'active' : '' ?>">
-                                            <i class="nav-icon far fa-solid fa-user"></i>
-                                            <p>User</p>
-                                        </a>
-                                    </li>
-                                <?php } ?>
-                                <?php if (session()->get('level') == 'admin') { ?>
-                                    <li class="nav-item">
-                                        <a href="<?= base_url('Meja') ?>" class="nav-link <?= $submenu == 'meja' ? 'active' : '' ?>">
-                                            <i class="nav-icon fas fa-solid fa-border-all"></i>
-                                            <p>Meja</p>
-                                        </a>
-                                    </li>
-                                <?php } ?>
-                                <?php if (session()->get('level') == 'admin' || session()->get('level') == 'waiter') { ?>
-                                    <li class="nav-item">
-                                        <a href="<?= base_url('Kategori') ?>" class="nav-link <?= $submenu == 'kategori' ? 'active' : '' ?>">
-                                            <i class="nav-icon fas fa-solid fa-boxes"></i>
-                                            <p>Kategori</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="<?= base_url('Menu') ?>" class="nav-link <?= $submenu == 'menu' ? 'active' : '' ?>">
-                                            <i class="nav-icon fas fa-solid fa-list"></i>
-                                            <p>Menu</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="<?= base_url('Pesanan') ?>" class="nav-link <?= $submenu == 'pesanan' ? 'active' : '' ?>">
-                                            <i class="nav-icon fas fa-solid fa-file"></i>
-                                            <p>Pesanan</p>
-                                        </a>
-                                    </li>
-                                <?php } ?>
+                                <li class="nav-item">
+                                    <a href="<?= base_url('User') ?>" class="nav-link <?= $submenu == '1' ? 'active' : '' ?>">
+                                        <i class="nav-icon far fa-solid fa-user"></i>
+                                        <p>User</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<?= base_url('Meja') ?>" class="nav-link <?= $submenu == 'meja' ? 'active' : '' ?>">
+                                        <i class="nav-icon fas fa-solid fa-border-all"></i>
+                                        <p>Meja</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<?= base_url('Kategori') ?>" class="nav-link <?= $submenu == 'kategori' ? 'active' : '' ?>">
+                                        <i class="nav-icon fas fa-solid fa-boxes"></i>
+                                        <p>Kategori</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<?= base_url('Menu') ?>" class="nav-link <?= $submenu == 'menu' ? 'active' : '' ?>">
+                                        <i class="nav-icon fas fa-solid fa-list"></i>
+                                        <p>Menu</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<?= base_url('Pesanan') ?>" class="nav-link <?= $submenu == 'pesanan' ? 'active' : '' ?>">
+                                        <i class="nav-icon fas fa-solid fa-file"></i>
+                                        <p>Pesanan</p>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     </ul>

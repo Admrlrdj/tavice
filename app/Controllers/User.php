@@ -20,8 +20,8 @@ class User extends BaseController
             'subjudul' => 'User',
             'title' => 'User',
             'menu' => 'masterdata',
-            'submenu' => 'user',
-            'page' => 'user/admin/v_user',
+            'submenu' => '1',
+            'page' => 'user/v_user',
             'user' => $this->ModelUser->AllData(),
             'pelanggan' => $this->ModelPelanggan->AllData(),
         ];

@@ -21,7 +21,7 @@ class Kategori extends BaseController
             'title' => 'Kategori',
             'menu' => 'masterdata',
             'submenu' => 'kategori',
-            'page' => 'user/admin/v_kategori',
+            'page' => 'user/v_kategori',
             'kategori' => $this->ModelKategori->AllData(),
         ];
         return view('user/v_template', $data);

@@ -21,7 +21,7 @@ class Meja extends BaseController
             'title' => 'Meja',
             'menu' => 'masterdata',
             'submenu' => 'meja',
-            'page' => 'user/admin/v_meja',
+            'page' => 'user/v_meja',
             'meja' => $this->ModelMeja->AllData(),
         ];
         return view('user/v_template', $data);

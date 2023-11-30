@@ -23,7 +23,7 @@ class Pesanan extends BaseController
             'title' => 'Pesanan',
             'menu' => 'masterdata',
             'submenu' => 'pesanan',
-            'page' => 'user/waiter/v_pesanan',
+            'page' => 'user/v_pesanan',
             'pesanan' => $this->ModelPesanan->AllData(),
             'produk' => $this->ModelMenu->AllData(),
             'meja' => $this->ModelMeja->AllData(),
